@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css">
+</head>
+</head>
+
+<body>
+    <!-- CDN link: https://cdnjs.com/libraries/fancybox/ -->
+    <!-- js cookie: https://github.com/js-cookie/js-cookie -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script src="js.cookie.js"></script>
+
+    <a id="fancybox-modal" data-fancybox href="agegate.html"></a>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //if ($.cookie('popup') != 1) {
+            //    $.cookie('popup', '1', { path: '/', expires: 7 });
+            $("#fancybox-modal").fancybox(
+                {
+                    buttons : false, // disable toolbar buttons
+                    closeClickOutside : false,
+                    touch : false,
+                    keys: {
+                        close: null //prevents closing when press ESC button
+                    }
+                }
+            ).trigger('click');
+            // }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="agegate.css">
+</head>
+
+<body>
+    <div id="modal" >
+        <img src="logo.jpg" alt="???">
+        <h1>Are you over 18?</h1>
+        <p>
+            <button data-fancybox-close="" class="btn btn-ageunder" onclick="redirect()">Under 18</button>
+            <button data-fancybox-close="" class="btn btn-ageover" onclick="disappear()">18 or over</button>
+        </p>
+        <h3>You must be 18 or older, or of the legal smoking age in your state/country, in order to enter the site.</h3>
+    </div>
+
+    <script>
+        function redirect() {
+           window.history.back();
+           window.open("https://www.instagram.com/ejuicevibes/");
+        };
+        function disappear() {
+            //??? $.fancybox.close()
+        }
+    </script>
+</body>
+</html>

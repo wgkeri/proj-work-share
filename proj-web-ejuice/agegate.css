@@ -1,0 +1,44 @@
+#modal {
+  display: inline-block;
+  font-size: 1em;
+  font-family: Palatino Linotype;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 33px 5vw;
+  position: relative;
+  text-align: center;
+}
+
+img {
+    border-radius: 8px;
+}
+
+h3 {
+  color: lightgrey;
+}
+
+.btn {
+  background-color: #ffcc66;
+  border: 0;
+  border-radius: 8px;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 0;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.btn-ageover:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-ageunder:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
